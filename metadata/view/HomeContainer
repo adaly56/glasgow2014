@@ -1,0 +1,12 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "HomeContainer"
+    },
+    "designerId": "d722e564-a7b4-4fba-ab22-9fb3741365db"
+}

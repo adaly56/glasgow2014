@@ -1,0 +1,120 @@
+{
+    "eventCategory": [
+        {
+            "name": "Aquatics: Diving",
+            "venue": "Royal Commonwealth Pool, Edinburgh",
+	    "address":"21 Dalkeith Rd, Edinburgh, Midlothian EH16 5BB",
+            "longitude": 55.939015,
+            "latitude": 55.939015,
+            "dates": [
+                {
+                    "day": "Wed",
+                    "date": "30.07",
+                    "eventTimes": [
+                        {
+                            "event": "M  1m Springboard",
+                            "time": "10:00-12:45",
+                            "key": "P"
+                        },
+                        {
+                            "event": "W  Synchronised 10m Platform",
+                            "time": "10:00-12:45",
+                            "key": "F"
+                        },
+                        {
+                            "event": "M  1m Springboard",
+                            "time": "18:00-20:45",
+                            "key": "F"
+                        },
+                        {
+                            "event": "W  Synchronised 3m Springboard",
+                            "time": "18:00-20:45",
+                            "key": "F"
+                        }
+                    ]
+                },
+                {
+                    "day": "Thu",
+                    "date": "31.07",
+                    "eventTimes": [
+                        {
+                            "event": "M  3m Springboard",
+                            "time": "10:00-13:00",
+                            "key": "P"
+                        },
+                        {
+                            "event": "W  10m Platform",
+                            "time": "10:00-13:00",
+                            "key": "P"
+                        },
+                        {
+                            "event": "M  3m Springboard",
+                            "time": "18:00-21:30",
+                            "key": "F"
+                        },
+                        {
+                            "event": "W  10m Platform",
+                            "time": "18:00-21:30",
+                            "key": "F"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Aquatics: Swimming",
+            "venue": "Tollcross International Swimming Centre ",
+            "longitude": true,
+            "latitude": 25,
+            "dates": [
+                {
+                    "day": "Thu",
+                    "date": "24.07",
+                    "eventTimes": [
+                        {
+                            "event": "M Para-Sport 100m Freestyle S9. 400m Freestyle",
+                            "time": "10:30-12:30",
+                            "key": "H"
+                        },
+                        {
+                            "event": "M 100m Backstroke. 200m Breaststroke. 50m Butterfly",
+                            "time": "10:30-12:30",
+                            "key": "H"
+                        },
+                        {
+                            "event": "W 200m Freestyle. 50m Breaststroke. 100m Butterfly",
+                            "time": "10:30-12:30",
+                            "key": "H"
+                        },
+                        {
+                            "event": "400m Individual Medley. 4 x 100m Freestyle Relay",
+                            "time": "10:30-12:30",
+                            "key": "H"
+                        }
+                    ]
+                },
+                {
+                    "day": "Fri",
+                    "date": "25.07",
+                    "eventTimes": [
+                        {
+                            "event": "M 200m Freestyle. 100m Breaststroke",
+                            "time": "10:30-12:00",
+                            "key": "H"
+                        },
+                        {
+                            "event": "400m Individual Medley. 4 x 100m Freestyle Relay",
+                            "time": "10:30-12:00",
+                            "key": "H"
+                        },
+                        {
+                            "event": "W Para-Sport 100m Freestyle S8. 50m Freestyle. 100m Backstroke",
+                            "time": "10:30-12:00",
+                            "key": "SF"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

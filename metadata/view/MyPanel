@@ -1,0 +1,63 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "myPanel",
+        "designer|userClassName": "MyPanel",
+        "html": null,
+        "id": "myPanelId",
+        "styleHtmlContent": true
+    },
+    "designerId": "c61d2e12-c915-4c5f-8a58-66d2975f9bd8",
+    "cn": [
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "centered": true,
+                "cls": [
+                    "btnAction"
+                ],
+                "designer|displayName": "",
+                "designer|uiInterfaceName": "action",
+                "docked": null,
+                "height": null,
+                "icon": null,
+                "id": "pubsButtonId",
+                "style": null,
+                "styleHtmlContent": true,
+                "text": null,
+                "ui": "action",
+                "width": null
+            },
+            "designerId": "f08fd53f-1f98-413d-a453-217bd5cbd047"
+        },
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "tpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "tpl",
+                "implHandler": [
+                    "<div>",
+                    "<h3>{venue}</h3>",
+                    "    <p>{key}</p>",
+                    "    <p>Time is{text}</p>",
+                    "</div>"
+                ]
+            },
+            "designerId": "d690ad7c-55d2-44b5-a6cc-74a5ba732266"
+        }
+    ]
+}

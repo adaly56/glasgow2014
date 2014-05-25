@@ -1,0 +1,330 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Business"
+    },
+    "designerId": "230a35cd-5095-4527-948a-ff5e532ac23f",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "re",
+            "type": "string"
+        },
+        {
+            "group": "(Custom Properties)",
+            "name": "ref",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "dataList",
+                "selector": "#dataList"
+            },
+            "designerId": "526043cd-cf42-4223-9c2a-12348fa91735"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "listCard",
+                "selector": "#listCard"
+            },
+            "designerId": "ddb02d40-7b38-4b8b-a242-00ccbca4a4df"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "mainNav",
+                "selector": "mainnav"
+            },
+            "designerId": "12aefc89-e65a-4156-a0eb-d0762fdf6632"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "detailCard",
+                "selector": "detailpanel"
+            },
+            "designerId": "70070a91-c212-4aca-b7c8-ccb41b02e08b"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "callback"
+                ],
+                "fn": "getLocation",
+                "implHandler": [
+                    "if (navigator && navigator.geolocation) {",
+                    "                    navigator.geolocation.getCurrentPosition(function(position) {",
+                    "                        callback(position);",
+                    "                    }, function(error) {",
+                    "                        // give a warning for error",
+                    "                    });",
+                    "                }"
+                ]
+            },
+            "designerId": "7dda1838-11e0-4e9c-aff9-a27acb7b493c"
+        },
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "var me = this;",
+                    "",
+                    "            Ext.Viewport.setMasked({ message: 'Loading...' });",
+                    "            // Get the user's location",
+                    "            me.getLocation(function (location) {",
+                    "",
+                    "                // Use Yelp to get the business names",
+                    "                me.getBusinesses(location, function (store) {",
+                    "console.log(me);",
+                    "                    // Bind data to the list and display it",
+                    "                    me.getDataList().setStore(store);",
+                    "",
+                    "                    Ext.Viewport.setMasked(false);",
+                    "                });",
+                    "            });"
+                ]
+            },
+            "designerId": "1c2747cd-f71f-4fe3-8176-96f73de84d87"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "location",
+                    "callback"
+                ],
+                "fn": "getBusinesses",
+                "implHandler": [
+                    " // Note: Obtain a Yelp API key by registering (for free)",
+                    "            // with Yelp at http://www.yelp.com/developers/getting_started/api_overview",
+                    "            // (in this app, we use the Review Search API v1.0)",
+                    "            var store = Ext.data.StoreManager.lookup('BusinessStore'),",
+                    "                yelpKey = 'On6hqIYZ7oNJMiuMEOIyTQ', // Enter your Yelp API key here",
+                    "                url = 'http://api.yelp.com/business_review_search' +",
+                    "                '?ywsid=' + yelpKey +",
+                    "                '&term=Bars' +",
+                    "                '&lat=' + location.coords.latitude +",
+                    "                '&long=' + location.coords.longitude;",
+                    "                //'&lat=' + venueLocation.lat +",
+                    "                //'&long=' + venueLocation.long;",
+                    "",
+                    "        console.log(url);",
+                    "            store.getProxy().setUrl(url);",
+                    "            store.load(function() {",
+                    "                callback(store);",
+                    "            });"
+                ]
+            },
+            "designerId": "0cc62ac1-ece0-417a-b43a-2e266afed32e"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#dataList",
+                "designer|targetType": "Ext.dataview.List",
+                "fn": "onListItemTap",
+                "implHandler": [
+                    "console.log(\"test\");",
+                    "",
+                    "",
+                    "        var map,",
+                    "                info,",
+                    "                details;",
+                    "",
+                    "            if (record) {",
+                    "                details = Ext.create('Glasgow2014.view.DetailPanel', {",
+                    "                    title: 'Details'",
+                    "                });",
+                    "",
+                    "                // stash info for later use by the map card",
+                    "                map = details.child('#detailMap');",
+                    "                map._record = record;",
+                    "",
+                    "                // set the info",
+                    "                info = details.child('#contact').child('#info');",
+                    "                info.child('#photo').setData(record.data);",
+                    "                info.child('#data').setData(record.data);",
+                    "",
+                    "                this.getMainNav().push(details);",
+                    "            }"
+                ],
+                "name": "itemtap"
+            },
+            "designerId": "2a971ff7-f7ac-4549-9625-04d662b5b7d6"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "detailpanel > map",
+                "designer|targetType": "Ext.Map",
+                "fn": "onMapActivate",
+                "implHandler": [
+                    " var map = newActiveItem,",
+                    "               record = map._record,",
+                    "               lat = record.get('latitude'),",
+                    "               lng = record.get('longitude'),",
+                    "               centerMap = Ext.Function.createDelayed(function() {",
+                    "                   map.setMapOptions({",
+                    "                       zoom: 18",
+                    "                   });",
+                    "                   map.setMapCenter({",
+                    "                       latitude: lat,",
+                    "                       longitude: lng",
+                    "                   });",
+                    "               }, 250),",
+                    "               geocoder, loc;",
+                    "            if (lat && lng) {",
+                    "               centerMap();",
+                    "            } else {",
+                    "               geocoder = this._geocoder || (this._geocoder = new google.maps.Geocoder());",
+                    "               geocoder.geocode(",
+                    "                   {address: [",
+                    "                       record.get('address1'),",
+                    "                       record.get('address2'),",
+                    "                       record.get('address3'),",
+                    "                       record.get('city'),",
+                    "                       record.get('state_code'),",
+                    "                       record.get('zip')",
+                    "                   ].join(', ')},",
+                    "                   function(results, status) {",
+                    "                       if (status == google.maps.GeocoderStatus.OK) {",
+                    "                           loc = results[0].geometry.location;",
+                    "                           lat = loc.lat();",
+                    "                           lng = loc.lng();",
+                    "                           record.set('latitude', lat);",
+                    "                           record.set('longitude', lng);",
+                    "                           centerMap();",
+                    "                       } else {",
+                    "                           Ext.Msg.alert(\"Could not find location: \" + status);",
+                    "                       }",
+                    "                   }",
+                    "               );",
+                    "            }"
+                ],
+                "name": "activate"
+            },
+            "designerId": "57998d1b-7843-4250-af7d-54c8d6a8c775"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#pubsButtonId",
+                "designer|targetType": "Ext.Button",
+                "fn": "onButtonTap",
+                "implHandler": [
+                    "console.log(\"go to pubs\");",
+                    "/*var venueLocation={",
+                    "",
+                    "    long:-4.251806,",
+                    "    lat: 55.864236999999996",
+                    "",
+                    "};*/",
+                    "",
+                    "var mylong=-4.251806;",
+                    "var mylat= 55.864236999999996;",
+                    " var me = this;",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "            var store = Ext.data.StoreManager.lookup('BusinessStore'),",
+                    "                yelpKey = 'On6hqIYZ7oNJMiuMEOIyTQ',",
+                    "                url = 'http://api.yelp.com/business_review_search' +",
+                    "                '?ywsid=' + yelpKey +",
+                    "                '&term=Bars' +",
+                    "",
+                    "                '&lat=' + mylat +",
+                    "                '&long=' + mylong;",
+                    "",
+                    "        console.log(url);",
+                    "            store.getProxy().setUrl(url);",
+                    "            store.load();",
+                    "//this.getMainNav().push({xtype: 'listcontainer'});",
+                    "console.log(\"test\");",
+                    "Ext.Viewport.animateActiveItem({xtype: 'mapcontainer'},{type: 'slide',direction: 'left'});",
+                    "// this.getMainNav().push({xtype: 'myPanel'});",
+                    "console.log(me);",
+                    "console.log(\"end\");"
+                ],
+                "name": "tap"
+            },
+            "designerId": "12181d6e-9721-4eb5-9792-eded283489e7"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "mapContainer",
+                "selector": "mapcontainer"
+            },
+            "designerId": "80a0af85-d417-40de-982c-cfae473051b2"
+        }
+    ]
+}

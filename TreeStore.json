@@ -1,0 +1,202 @@
+/*{
+    "items": [
+        {
+            "text": "Drinks",
+            "items": [
+                {
+                    "text": "Water",
+                    "items": [
+                        { "text": "Still", "leaf": true },
+                        { "text": "Sparkling", "leaf": true }
+                    ]
+                },
+                { "text": "Soda", "leaf": true }
+            ]
+        },
+        {
+            "text": "Snacks",
+            "items": [
+                { "text": "Nuts", "leaf": true },
+                { "text": "Pretzels", "leaf": true },
+                { "text": "Wasabi Peas", "leaf": true  }
+            ]
+        }
+    ]
+}*/
+
+{
+    "items": [
+        {
+            "text": "Aquatics: Diving",
+            "venue": "Royal Commonwealth Pool, Edinburgh",
+            "address":"21 Dalkeith Rd, Edinburgh, Midlothian EH16 5BB",
+            "longitude": 55.939015,
+            "latitude": 55.939015,
+            "items": [
+                {
+                    "text": "Wed 30th July 10:00-12:45",
+                    "items": [
+                        {
+                            "text": "M  1m Springboard",
+                            "key": "P",
+                            "leaf": true
+                        },
+                        {
+                            "text": "W  Synchronised 10m Platform",
+                            "key": "F",
+                            "leaf": true
+                        }
+                    ]
+                },
+                {
+                    "text": "Wed 30th July 18:00-20:45",
+                    "items": [
+                        {
+                            "text": "M  1m Springboard",
+                            "key": "F",
+                            "leaf": true
+                        },
+                        {
+                            "text": "W Synchronised3mSpringboard",
+                            "key": "F",
+                            "leaf": true
+                        }
+                    ]
+                },
+                {
+                    "text": "Thu 31st July 10:00-13:00",
+                    "items": [
+                        {
+                            "text": "M 3m Springboard",
+                            "key": "P",
+                            "leaf": true
+                        },
+                        {
+                            "text": "W 10m Platform",
+                            "key": "P",
+                            "leaf": true
+                        }
+                    ]
+                },
+                {
+                    "text": "Thu 31st July 18:00-21:30",
+                    "items": [
+                        {
+                            "text": "M 3m Springboard",
+                            "key": "F",
+                            "leaf": true
+                        },
+                        {
+                            "text": "W 10m Platform",
+                            "key": "F",
+                            "leaf": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "Aquatics: Swimming",
+            "venue": "Tollcross International Swimming Centre",
+            "longitude": true,
+            "latitude": 25,
+            "items": [
+                {
+                    "text": "Thu 24th July 10:30-12:30",
+                    "items": [
+                        {
+                            "text": "M Para-Sport 100m Freestyle S9",
+                            "key": "H",
+                            "leaf": true
+                        },
+                        {
+                            "text": "400m Freestyle",
+                            "key": "H",
+                            "leaf": true
+                        },
+                        {
+                            "text": "M 100m Backstroke",
+                            "key": "H",
+                            "leaf": true
+                        },
+                        {
+                            "text": "M 200m Breaststroke",
+                            "key": "H",
+                            "leaf": true
+                        },
+                        {
+                            "text": "M 50m Butterfly",
+                            "key": "H",
+                            "leaf": true
+                        },
+                        {
+                            "text": "W 200m Freestyle",
+                            "key": "H",
+                            "leaf": true
+                        },
+                        {
+                            "text": "W 50m Breaststroke",
+                            "key": "H",
+                            "leaf": true
+                        },
+                        {
+                            "text": "W 100m Butterfly",
+                            "key": "H",
+                            "leaf": true
+                        },
+                        {
+                            "text": "400m Individual Medley",
+                            "key": "H",
+                            "leaf": true
+                        },
+                        {
+                            "text": "100m Freestyle Relay",
+                            "key": "H",
+                            "leaf": true
+                        }
+                    ]
+                },
+                {
+                    "text": "Fri 25th July 10:30-12:00",
+                    "items": [
+                        {
+                            "text": "M 200m Freestyle",
+                            "key": "H",
+                            "leaf": true
+                        },
+                        {
+                            "text": "M 100m Breaststroke",
+                            "key": "H",
+                            "leaf": true
+                        },
+                        {
+                            "text": "400m IndividualMedley",
+                            "key": "H",
+                            "leaf": true
+                        },
+                        {
+                            "text": "100m Freestyle Relay",
+                            "key": "H",
+                            "leaf": true
+                        },
+                        {
+                            "text": "W Para-Sport 100m Freestyle S8",
+                            "key": "SF",
+                            "leaf": true
+                        },
+                        {
+                            "text": "50m Freestyle",
+                            "key": "SF",
+                            "leaf": true
+                        },
+                        {
+                            "text": "W 100m Backstroke",
+                            "key": "SF",
+                            "leaf": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

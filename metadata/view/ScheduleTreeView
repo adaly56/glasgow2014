@@ -1,0 +1,59 @@
+{
+    "type": "Ext.dataview.NestedList",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "scheduletreeview",
+        "designer|userClassName": "ScheduleTreeView",
+        "detailCard": "MyPanel",
+        "id": "test",
+        "store": "ScheduleTreeStore",
+        "title": "Schedule"
+    },
+    "designerId": "0a01e35b-8e6b-4e01-8e15-985263ebdbe8",
+    "cn": [
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onNestedlistLeafItemTap",
+                "implHandler": [
+                    "var detailCard = this.getDetailCard();",
+                    "",
+                    "//var me = this;",
+                    "var node = Ext.getCmp('test').getLastNode();",
+                    "//var test = hasParent(Ext.getCmp('test').getLastNode());",
+                    "//var nodetest=this.goToNode(test);",
+                    "//var me = this;",
+                    "",
+                    "//var test=hasParent(me);",
+                    "           // detailCard.setHtml('You selected: ' + test.get('text'));",
+                    "//detailCard.setHtml('You selected: ' + node.parentNode.get('venue'));",
+                    "",
+                    "//detailCard.setTpl(node.parentNode.get('venue'));",
+                    "  // define a sample data object",
+                    "var myData = {",
+                    "venue: node.parentNode.get('venue')",
+                    "",
+                    "};",
+                    "// get a pointer to the component instance",
+                    "//var myCmp = Ext.ComponentQuery.query('#mycomponent')[0];",
+                    "// transmit data to the component and process through the template",
+                    "detailCard.setData(myData);",
+                    "",
+                    "",
+                    "//record.get('venue')"
+                ],
+                "name": "leafitemtap"
+            },
+            "designerId": "ea3f4bbf-cd34-46f0-aede-94b483535620"
+        }
+    ]
+}

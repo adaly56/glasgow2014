@@ -1,0 +1,15 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "testpanel",
+        "designer|userClassName": "TestPanel",
+        "html": "i am a test",
+        "styleHtmlContent": true
+    },
+    "designerId": "cff3debd-f80e-491c-a28d-efa6e09a81e4"
+}

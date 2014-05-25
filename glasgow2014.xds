@@ -1,0 +1,70 @@
+{
+    "name": "glasgow2014",
+    "settings": {
+        "cmd": {
+            "license": "commercial",
+            "cmdVersion": "4.0.4.84",
+            "frameworkVersion": "2.3.1.410"
+        },
+        "canvasControls": {
+            "viewportSize": {
+                "name": "iPhone",
+                "builtIn": true,
+                "height": 480,
+                "width": 320
+            },
+            "viewportOrientation": "portrait"
+        },
+        "urlPrefix": "http://localhost:1841/glasgow2014",
+        "exportPath": "",
+        "spacesToIndent": 4,
+        "sdkPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "displayfield-ExtBox1-1534-inputEl": "Not Installed",
+        "displayfield-ExtBox1-1790-inputEl": "Not Installed",
+        "displayfield-ExtBox1-1278-inputEl": "Not Installed",
+        "displayfield-ExtBox1-2568-inputEl": "Not Installed"
+    },
+    "xdsVersion": "3.0.4",
+    "xdsBuild": 1386,
+    "schemaVersion": 1,
+    "upgradeVersion": 300000000004,
+    "framework": "touch23",
+    "viewOrderMap": {
+        "view": [
+            "0f60ad7c-69d1-4048-b773-5d8eb1a6ebbc",
+            "e3a8bae9-93dd-4664-a276-a6f884baf9d1",
+            "71a3a4d3-2cbd-4df0-8138-b5aed2236656",
+            "7c7d5d91-e5d7-47ba-be4f-f22fd01aece0",
+            "0a01e35b-8e6b-4e01-8e15-985263ebdbe8",
+            "c61d2e12-c915-4c5f-8a58-66d2975f9bd8",
+            "cff3debd-f80e-491c-a28d-efa6e09a81e4",
+            "d722e564-a7b4-4fba-ab22-9fb3741365db",
+            "1d6aa8dc-012f-4711-83ef-f4e66df736fe"
+        ],
+        "store": [
+            "c3dbea8f-9b0b-49aa-85d8-ab34e36ae437",
+            "7f511cec-6139-47c1-888d-03cb0f06f55e"
+        ],
+        "controller": [
+            "230a35cd-5095-4527-948a-ff5e532ac23f"
+        ],
+        "model": [
+            "4244a68c-d076-4e3a-86dd-171088c4b6f1",
+            "48c34d9e-79f0-4e23-bf2e-ddd807c0403f"
+        ],
+        "resource": [
+            "451b6914-a979-417d-a27e-09a4a3a29bbc",
+            "c3b9380c-360a-4b3c-ad53-3b6558aa508e",
+            "64ffc25d-6124-4329-96a1-63627ae45581",
+            "5f25564d-4db9-43ba-ad10-b34642234c44"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

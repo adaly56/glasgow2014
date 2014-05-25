@@ -1,0 +1,28 @@
+{
+    "type": "Ext.navigation.View",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "mainnav",
+        "designer|userClassName": "MainNav"
+    },
+    "designerId": "0f60ad7c-69d1-4048-b773-5d8eb1a6ebbc",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Pubs"
+            },
+            "designerId": "b9f78fbe-eabe-4bf1-9fc9-ba160e1235c4",
+            "masterInstanceId": "e3a8bae9-93dd-4664-a276-a6f884baf9d1"
+        }
+    ]
+}

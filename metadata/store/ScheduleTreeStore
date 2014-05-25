@@ -1,0 +1,30 @@
+{
+    "type": "jsonptreestore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "defaultRootProperty": "items",
+        "designer|userClassName": "ScheduleTreeStore",
+        "model": "ScheduleTree",
+        "storeId": "ScheduleTreeStore"
+    },
+    "designerId": "7f511cec-6139-47c1-888d-03cb0f06f55e",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "TreeStore.json"
+            },
+            "designerId": "fa3eca9d-d8a0-40b2-9de8-a07a27c8113b"
+        }
+    ]
+}

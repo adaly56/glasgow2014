@@ -1,0 +1,118 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "mapcontainer",
+        "designer|userClassName": "MapContainer"
+    },
+    "designerId": "1d6aa8dc-012f-4711-83ef-f4e66df736fe",
+    "cn": [
+        {
+            "type": "Ext.Map",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": "100%",
+                "id": "scheduleMap",
+                "itemId": "mymap1"
+            },
+            "designerId": "c3ea4e6a-9e0c-47b7-af56-5ef2406982a6",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onScheduleMapActivate",
+                        "implHandler": [
+                            "console.log(\"schedulemap activated\");",
+                            "",
+                            "var map = newActiveItem;",
+                            "var mylong=-4.175422;",
+                            "var mylat= 55.8450285;",
+                            "               ",
+                            "               centerMap = Ext.Function.createDelayed(function() {",
+                            "                   map.setMapOptions({",
+                            "                       zoom: 18",
+                            "                   });",
+                            "                   map.setMapCenter({",
+                            "                       latitude: mylat,",
+                            "                       longitude: mylong",
+                            "                   });",
+                            "               }, 250);",
+                            "",
+                            "",
+                            "               ",
+                            "            ",
+                            "               centerMap();",
+                            "           ",
+                            "              ",
+                            "    console.log(\"end schedulemap\");        "
+                        ],
+                        "name": "activate"
+                    },
+                    "designerId": "304deb1c-ede4-4027-a53b-7257d0aacb09"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top"
+            },
+            "designerId": "427d5c8a-0b42-41ba-9c14-6c4e3d27457c",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|uiInterfaceName": "back",
+                        "id": "mapButtonId",
+                        "itemId": "mybutton1",
+                        "text": "back",
+                        "ui": "back"
+                    },
+                    "designerId": "75c9d133-eef3-45f2-8707-ce6f46247827",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onMapButtonIdTap",
+                                "implHandler": [
+                                    "console.log('back event binding');",
+                                    "Ext.Viewport.remove(Ext.Viewport.getActiveItem(), true);"
+                                ],
+                                "name": "tap"
+                            },
+                            "designerId": "357e846e-0766-4eb9-b784-12894b08aa95"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

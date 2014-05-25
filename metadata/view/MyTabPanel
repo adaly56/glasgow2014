@@ -1,0 +1,71 @@
+{
+    "type": "Ext.tab.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "designer|userAlias": "mytabpanel",
+        "designer|userClassName": "MyTabPanel"
+    },
+    "designerId": "7c7d5d91-e5d7-47ba-be4f-f22fd01aece0",
+    "cn": [
+        {
+            "type": "Ext.tab.Bar",
+            "reference": {
+                "name": "tabBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|pack": "center",
+                "docked": "bottom"
+            },
+            "designerId": "4f7fe69d-a46e-45d8-a4bb-4250aa517d52"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|createAlias": null,
+                "iconCls": "info",
+                "title": "Home"
+            },
+            "designerId": "6e48e497-b402-48f9-a2e9-14a34f690050"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|createAlias": "scheduletreeview",
+                "iconCls": "info",
+                "title": "Schedule"
+            },
+            "designerId": "0ac5560c-be9b-4084-b4b5-b1f74c8db484"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|createAlias": "mainnav",
+                "iconCls": "info",
+                "title": "Pubs"
+            },
+            "designerId": "5bfb455d-c09b-4ad6-890c-229892ab629c"
+        }
+    ]
+}

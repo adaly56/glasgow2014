@@ -1,0 +1,53 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "controllers": [
+            "Business"
+        ],
+        "models": [
+            "Business",
+            "ScheduleTree"
+        ],
+        "name": "Glasgow2014",
+        "stores": [
+            "BusinessStore",
+            "ScheduleTreeStore"
+        ],
+        "views": [
+            "MainNav",
+            "ListContainer",
+            "DetailPanel",
+            "MyTabPanel",
+            "ScheduleTreeView",
+            "MyPanel",
+            "HomeContainer",
+            "MapContainer"
+        ]
+    },
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "console.log(\"Application launch\");",
+                    "//Ext.fly('appLoadingIndicator').destroy();",
+                    "//Ext.create('Glasgow2014.view.MyTabPanel', {fullscreen: true});",
+                    "console.log(\"Application launch true\");"
+                ]
+            },
+            "designerId": "45be8bf5-ec30-442a-8c48-f8b38081ff55"
+        }
+    ]
+}

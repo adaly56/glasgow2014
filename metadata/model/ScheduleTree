@@ -1,0 +1,50 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ScheduleTree"
+    },
+    "designerId": "48c34d9e-79f0-4e23-bf2e-ddd807c0403f",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "text"
+            },
+            "designerId": "5ccfc1b8-27fb-4b95-ad74-2f68c6ef41ed"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "key"
+            },
+            "designerId": "7a20c53f-3c92-4b61-9e48-921d68a54016"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "venue"
+            },
+            "designerId": "0c100125-37e4-4721-93fe-48308b8623ae"
+        }
+    ]
+}
